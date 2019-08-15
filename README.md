@@ -5,9 +5,9 @@
 #### Files:
 * quotes
   * src/main 
-    * [App.java](../quotes/src/main/java/quotes/App.java)
+    * [App.java](src/main/java/quotes/App.java)
   * src/test
-    * [AppTest.java](../quotes/src/test/java/quotes/AppTest.java)
+    * [AppTest.java](src/test/java/quotes/AppTest.java)
 
 #### Methods:
 **Restaurant**
