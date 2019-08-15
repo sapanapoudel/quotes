@@ -15,6 +15,8 @@
 #### Resources:
 * Bomi Bear
 * Melfi Perez
+* Travis Cox
+* Marisha Hoza
 
 <a name="files"></a>
 #### Files:
@@ -31,13 +33,25 @@
 **App**
 * Methods:
   * `main()`
+    * Creates an instance of the Parser class and calls `jsonReader()`
 
 **Parser**
-* Variables:
 * Methods:
+  * `void jsonReader()`
+    * reads the json file using Gson
+    * adds all lines of the json file to an instance of the Quotes class as an array
+    * calls `randomQuote()` and uses the instance of the Quotes as the argument
+  * `int randomNum(Quotes[] quotes)`
+    * returns a random number between 0 and `quotes.length`
+  * `String printQuote(Quotes[] quotes)`
+    * returns a quote at the random number
 
 **Quotes**
 * Variables:
+  * `String author`
+  * `String text`
 * Methods:
+  * `public String toString()`
+    * returns a string with the author and quote
 
 **[Back to Top](#top)**

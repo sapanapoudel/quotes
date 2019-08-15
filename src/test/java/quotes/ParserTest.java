@@ -14,9 +14,4 @@ public class ParserTest {
             "Quote:  “I am good, but not an angel. I do sin, but I am not the devil. I am just a small girl in a big world trying to find someone to love.” \n",
             quotes[0].toString());
   }
-
-  @Test
-  public void testRandomQuote() {
-
-  }
 }
