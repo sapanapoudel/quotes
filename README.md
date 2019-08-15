@@ -27,6 +27,7 @@
     * [Quotes.java](./src/main/java/quotes/Quotes.java)
   * src/test
     * [ParserTest.java](./src/test/java/quotes/ParserTest.java)
+    * [QuotesTest.java](./src/test/java/quotes/QuotesTest.java)
 
 <a name="methods"></a>
 #### Methods:
