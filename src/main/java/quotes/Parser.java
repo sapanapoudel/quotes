@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.Scanner;
 
 class Parser {
-  void jsonReader(){
+  Quotes[] jsonReader(){
     Gson gson = new Gson();
     Quotes[] allQuotes = new Quotes[]{};
     StringBuilder quotes = new StringBuilder();
@@ -20,7 +20,7 @@ class Parser {
     } catch (FileNotFoundException e) {
       e.printStackTrace();
     }
-    randomQuote(allQuotes);
+    return  allQuotes;
   }
 
   void randomQuote(Quotes[] quotes) {
