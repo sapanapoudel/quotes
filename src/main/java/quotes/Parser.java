@@ -6,9 +6,9 @@ import java.io.*;
 import java.util.Scanner;
 
 class Parser {
-  Quotes[] jsonReader(){
+  Quote[] jsonReader(){
     Gson gson = new Gson();
-    Quotes[] allQuotes = new Quotes[]{};
+    Quote[] allQuotes = new Quote[]{};
     StringBuilder quotes = new StringBuilder();
 
     try {
@@ -16,18 +16,18 @@ class Parser {
       while (scanner.hasNextLine()) {
         quotes.append(scanner.nextLine());
       }
-      allQuotes = gson.fromJson(quotes.toString(), Quotes[].class);
+      allQuotes = gson.fromJson(quotes.toString(), Quote[].class);
     } catch (FileNotFoundException e) {
       e.printStackTrace();
     }
     return allQuotes;
   }
 
-  int randomNum(Quotes[] quotes) {
+  int randomNum(Quote[] quotes) {
     return (int) (Math.random() * quotes.length);
   }
 
-  String printQuote(Quotes[] quotes) {
+  String printQuote(Quote[] quotes) {
     int randomNum = randomNum(quotes);
     return quotes[randomNum].toString();
   }
