@@ -1,8 +1,8 @@
 package quotes;
 
 public class Quotes {
-  public String author;
-  public String text;
+  private String author;
+  private String text;
 
   Quotes(String author, String text) {
     this.author = author;
@@ -14,7 +14,7 @@ public class Quotes {
     return String.format(
       "Author: %s\n" +
           "Quote: %s\n",
-        this.author, this.text
+        this.author, this.text.trim()
     );
   }
 }
