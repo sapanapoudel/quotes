@@ -26,7 +26,6 @@ class Parser {
   }
 
   public String printQuote(Quote[] quotes) {
-    int randomNum = randomNum(quotes);
-    return quotes[randomNum].toString();
+    return quotes[randomNum(quotes)].toString();
   }
 }
