@@ -1,3 +1,4 @@
+<a name=top></a>
 ## Lab 08 - Quotes
 ### Table of Contents
 * [Team](#team)
@@ -26,3 +27,5 @@
 **Restaurant**
 * Variables:
 * Methods:
+
+**[Back to Top](#top)**
