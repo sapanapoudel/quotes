@@ -28,4 +28,5 @@ class Parser {
   public String printQuote(Quote[] quotes) {
     return quotes[randomNum(quotes)].toString();
   }
+
 }
