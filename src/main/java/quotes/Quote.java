@@ -1,6 +1,6 @@
 package quotes;
 
-public class Quote {
+public class Quote implements Quotable {
   private String author;
   private String text;
 
@@ -12,9 +12,8 @@ public class Quote {
   @Override
   public String toString() {
     return String.format(
-      "Author: %s\n" +
-          "Quote: %s\n",
-        this.author, this.text.trim()
-    );
+      "Quote: %s - %s\n",
+        this.text.trim(), this.author
+        );
   }
 }
